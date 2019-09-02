@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.match</groupId>
+        <artifactId>match-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>com.match</groupId>
+    <artifactId>microservice-expenses</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+    <properties>
+        <version>1.0.0</version>
+        <microservice-common-version>1.0.0</microservice-common-version>
+        <microservice-user-version>1.0.0</microservice-user-version>
+        <microservice-expenses-version>1.0.0</microservice-expenses-version>
+    </properties>
+
+    <modules>
+        <module>microservice-expenses-client</module>
+        <module>microservice-expenses-event</module>
+        <module>microservice-expenses-context</module>
+    </modules>
+</project>
