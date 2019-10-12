@@ -29,6 +29,7 @@ public class Expense {
     private Date createTime;
 
     @Column
+    @Temporal(TemporalType.DATE)
     private Date consumTime;
 
     @Column

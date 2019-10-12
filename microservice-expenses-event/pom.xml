@@ -12,4 +12,7 @@
     <artifactId>microservice-expenses-event</artifactId>
     <version>${version}</version>
 
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
 </project>

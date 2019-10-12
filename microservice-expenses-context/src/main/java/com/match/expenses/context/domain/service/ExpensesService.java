@@ -2,9 +2,12 @@ package com.match.expenses.context.domain.service;
 
 import com.match.common.PageResult;
 import com.match.expenses.client.bean.ExpenseDTO;
+import com.match.expenses.client.bean.GroupMemberDTO;
 import com.match.expenses.client.bean.SimpleGroupDTO;
 
 import java.math.BigDecimal;
+import java.util.Date;
+import java.util.List;
 
 /**
  * @Author zhangchao
@@ -14,7 +17,7 @@ import java.math.BigDecimal;
 public interface ExpensesService {
 
 
-    PageResult<ExpenseDTO> listByGroupId(String groupId, int page, int size);
+    PageResult<ExpenseDTO> listByGroupId(String groupId, String month, int page, int size);
 
 
     void addExpense(String userId,ExpenseDTO expenseDTO);
@@ -36,4 +39,9 @@ public interface ExpensesService {
 
     SimpleGroupDTO getDefaultGroup(String userId);
 
+    SimpleGroupDTO getGroup(String groupId);
+
+    List<SimpleGroupDTO> getGroupList(String userId);
+
+    List<GroupMemberDTO> getGroupMember(String groupId);
 }

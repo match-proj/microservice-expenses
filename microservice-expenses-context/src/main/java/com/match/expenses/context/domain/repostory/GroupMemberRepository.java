@@ -14,12 +14,14 @@ import java.util.List;
 public interface GroupMemberRepository extends JpaRepository<GroupMember,String>, JpaSpecificationExecutor {
 
 
-    public List<GroupMember> findFirstByUserId(String userId);
+    List<GroupMember> findByUserId(String userId);
 
-    public List<GroupMember> findFirstByGroupId(String groupId);
+    List<GroupMember> findByGroupId(String groupId);
 
     GroupMember findFirstByUserIdAndDefaultGroup(String userId,int DefaultGroup);
 
     Boolean existsByGroupIdAndUserId(String groupId,String userId);
+
+    Integer countByGroupId(String groupId);
 
 }

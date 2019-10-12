@@ -27,4 +27,8 @@
         <module>microservice-expenses-event</module>
         <module>microservice-expenses-context</module>
     </modules>
+
+
+    <build>
+    </build>
 </project>
